@@ -1,6 +1,6 @@
 require 'colorize'
 inv = "Please select a valid option."
-system "clear"
+system "clear" or system "cls"
 puts "
   ▄████  ▄▄▄      ███▄ ▄███▓▓█████       ██▀███   ▄▄▄▄
  ██▒ ▀█▒▒████▄   ▓██▒▀█▀ ██▒▓█   ▀      ▓██ ▒ ██▒▓█████▄
@@ -60,7 +60,11 @@ if a=="2"
    puts "Odd."
    puts " "
    sleep 1
-   system "cp ./data/password.txt %USERPROFILE%/Documents/"
+   system "xcopy .\\data\\password.txt %USERPROFILE%\\Documents\\"
+   sleep 2
+   puts " "
+   puts "Oh?"
+   sleep 3
    puts "Well, if you find it you can type it right here, I'll wait."
    puts " "
    b = gets.chomp
@@ -77,7 +81,7 @@ if a=="2"
 sleep 1
 puts " "
 sleep 1
-system "clear"
+system "clear" or system "cls"
 puts "NEW USER DETECTED. PLEASE ENTER USERNAME.".cyan
 puts " "
 sleep 1
@@ -90,7 +94,7 @@ puts " "
 sleep 2
 puts "LOGGING IN. PLEASE STAND BY".cyan
 sleep 3
-system "clear"
+system "clear" or system "cls"
 puts "WELCOME, USER #{name}".upcase.white
 puts "WHAT WOULD YOU LIKE TO DO TODAY?".white
 sleep 2
@@ -106,7 +110,7 @@ puts " "
 c = gets.chomp
 if c=="4"
 sleep 1
-system "clear"
+system "clear" or system "cls"
 puts "C:/My Games/".white
 puts " "
 puts " "
@@ -114,7 +118,7 @@ puts "1. game.rb".white
 puts " "
 d = gets.chomp
 if d==1
-  system "clear"
+  system "clear" or system "cls"
   puts "
   ▄████  ▄▄▄      ███▄ ▄███▓▓█████       ██▀███   ▄▄▄▄
  ██▒ ▀█▒▒████▄   ▓██▒▀█▀ ██▒▓█   ▀      ▓██ ▒ ██▒▓█████▄
@@ -135,7 +139,7 @@ sleep 1
 puts "We've been here before, haven't we.."
 sleep 2
 end
-system "clear"
+system "clear" or system "cls"
 puts "WELCOME, USER #{name}".upcase.white
 puts "WHHAT WOULD YOU LIKE TO DO TODAY?".white
 sleep 2
@@ -148,22 +152,20 @@ puts " "
 sleep 2
 puts "Wait.. My Games wasn't locked before?"
 sleep 3
-puts "And what about playing the actual game..?"
-sleep 3
 puts " "
 puts "Oh well, at least My Documents is unlocked now."
-sleep 1
+sleep 2
 puts "Let's go check it out."
 puts " "
 e = gets.chomp
 if e=="1"
-system "clear"
+system "clear" or system "cls"
 puts "C:/My Documents/".white
 puts " "
 puts "1. Jn@s hasn't programmed this far yet.".white
 sleep 1
 puts " "
-puts "Oh wow."
+puts "Oh. Okay then."
 end
 end
 end
