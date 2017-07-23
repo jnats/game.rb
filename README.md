@@ -4,4 +4,5 @@ A short, Text Adventure game by Jn@s... with a twist.
 This game requires the **colorize** gem to work.
 
 You can get this by inputting:
-  gem install colorize
+
+*gem install colorize*
